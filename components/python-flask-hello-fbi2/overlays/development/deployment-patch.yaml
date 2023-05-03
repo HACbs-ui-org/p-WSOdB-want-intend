@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: python-flask-hello-fbi2
+  namespace: burrzinga-hac-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/burrzinga-hac-tenant/p/python-flask-hello-fbi2@sha256:75bf3b37dfece5b461dd0ada12af78a7f8149fa051f3a6e3a54a8576922c3bb3
+        name: my-python
+        resources: {}
+status: {}
